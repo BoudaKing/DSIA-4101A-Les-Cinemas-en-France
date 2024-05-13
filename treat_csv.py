@@ -1,7 +1,7 @@
 import pandas as pd
 
 def treat_csv(csv_path):
-    data = pd.read_csv(csv_path)
+    data = pd.read_csv(csv_path, sep=';')
     
     ## SUPPRIMER LES COLONNES INUTILES
 
