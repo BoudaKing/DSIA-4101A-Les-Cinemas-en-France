@@ -1,5 +1,7 @@
 # DSIA-4101A-Les-Cinemas-en-France
 
+Les données proviennent du site https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/information/
+
 Pour telecharger le fichier csv, faire la commande 
 
 ```
