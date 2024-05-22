@@ -18,4 +18,13 @@ def make_histogram(dataframe):
     fig.update_traces(opacity=0.75)
     return fig
 
-
+def scatter_entrees(df,programmateurs=['AUCUN', 'UGC', 'PATHE-GAUMONT', 'MK2', 'CGR', 'CINEVILLE',
+       'MEGARAMA', 'GRAND ECRAN', 'AUBERT', 'KINEPOLIS', 'FONT']):
+  fig = px.scatter(df[df['programmateur'].isin(programmateurs)],
+                   x='population de la commune',
+                   y='entrées 2022',
+                   color='situation géographique',
+                   hover_data=['nom','commune'],
+                   )
+  
+  return fig
