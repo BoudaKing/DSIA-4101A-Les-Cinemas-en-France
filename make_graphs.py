@@ -18,3 +18,4 @@ def make_histogram(dataframe):
     fig.update_traces(opacity=0.75)
     return fig
 
+
