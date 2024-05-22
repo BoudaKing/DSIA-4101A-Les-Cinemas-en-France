@@ -1,4 +1,6 @@
-from treat_csv import treat_csv
+import dashboard
 
-data = treat_csv('./data/etablissements-cinematographiques.csv')
-print(data.head())
+if __name__ == '__main__':
+
+    app = dashboard.launch_app(__name__)
+    app.run_server(debug=True)

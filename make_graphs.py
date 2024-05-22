@@ -7,7 +7,6 @@ def make_histogram(dataframe):
     df_pdm = dataframe.melt(id_vars=['N° auto'], 
                             value_vars=['PdM en entrées des films français', 'PdM en entrées des films américains'],
                             var_name='Type de Film', value_name='Part de Marché')
-    print(df_pdm.head())
     # Créer l'histogramme
     fig = px.histogram(df_pdm, x='Part de Marché', color='Type de Film',
                        barmode='overlay',  # Superpose les barres pour une comparaison directe
