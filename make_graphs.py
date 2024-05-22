@@ -2,6 +2,9 @@ import pandas as pd
 import plotly.express as px
 
 def make_histogram(dataframe):
+    """
+    Fonction pour créer l'histogramme des parts de marché des films français et américains
+    """
     # Préparer les données : fusionner les colonnes pour les parts de marché françaises et américaines
     df_pdm = dataframe.melt(id_vars=['N° auto'], 
                             value_vars=['PdM en entrées des films français', 'PdM en entrées des films américains'],
