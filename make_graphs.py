@@ -18,13 +18,18 @@ def make_histogram(dataframe):
     fig.update_traces(opacity=0.75)
     return fig
 
-def scatter_entrees(df,programmateurs=['AUCUN', 'UGC', 'PATHE-GAUMONT', 'MK2', 'CGR', 'CINEVILLE',
-       'MEGARAMA', 'GRAND ECRAN', 'AUBERT', 'KINEPOLIS', 'FONT']):
-  fig = px.scatter(df[df['programmateur'].isin(programmateurs)],
-                   x='population de la commune',
-                   y='entrées 2022',
-                   color='situation géographique',
-                   hover_data=['nom','commune'],
-                   )
+def make_scatter_entrees(df,situation_geo='Tous'):
+    if situation_geo == 'Tous':
+        filtered_df = df
+
+    else:
+        filtered_df=df[df['situation géographique'] == situation_geo]
+
+    fig = px.scatter(filtered_df,
+        x='population de la commune',
+        y='entrées 2022',
+        color='programmateur',
+        hover_data=['nom','commune'],           
+        )
   
-  return fig
+    return fig
