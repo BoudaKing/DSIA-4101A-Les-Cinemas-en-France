@@ -1,5 +1,4 @@
 import folium
-import numpy as np
 from branca.colormap import linear
 
 def creer_carte_cinemas(dataframe):
