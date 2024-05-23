@@ -27,6 +27,7 @@ http://127.0.0.1:8050/  afin de vous connecter au dashboard.
 ```
 
 NB: Je me sers de curl pour faire une requete http et récupérer le fichier.
+
 # 2° Les données 
 
 Les données proviennent du site https://data.culture.gouv.fr/explore/dataset/etablissements-cinematographiques/information/
@@ -70,8 +71,13 @@ La repésentation des cinémas en France basée sur les données de fréquentati
 On peut s'apercevoir ici, que par exemple, dans la zone des vosges, le nombre d'entrées est très faible ce qui s'explique par le fait que cette situation géographique soit située sur la diagonale du vide, ce qui la rend très mal desservie. Les cinémas avec les plus grandes entrées sont dans les métropoles, comme on peut voir pour Paris, Toulon, Marseille etc...
 Chaque point nous fournit le nom, le département et les entrées de l'année 2022 du cinéma en question.
 
+# 3° Developper guide 
 
+Le projet se structure autour de plusieurs fichiers et répertoires à la racine : un fichier principal main.py contenant le script d'analyse, un dossier data avec les fichiers CSV nécessaires, un fichier requirements.txt qui répertorie les librairies externes nécessaires pour exécuter le script, un fichier README.md pour les instructions générales.
 
+Le script en lui-même est divisé en plusieurs segments clés. La première partie s'occupe du chargement des données à partir d'un fichier CSV et de leur nettoyage initial, incluant la suppression des colonnes inutiles et la gestion des valeurs manquantes. Cette étape est cruciale pour assurer la qualité des analyses ultérieures.
+
+La seconde partie du script est dédiée aux fonctions de visualisation. Utilisant des bibliothèques comme folium pour la cartographie, le script permet de créer des visualisations riches et informatives. Ces outils offrent des insights dynamiques sur des variables telles que les parts de marché des films ou la géolocalisation des cinémas, avec des marqueurs colorés indiquant le volume des entrées.
 
 
 
