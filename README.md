@@ -68,7 +68,7 @@ On remarque ici que la majorité
 La repésentation des cinémas en France basée sur les données de fréquentation de 2022 est ici visible sur la carte. On réussi à identifier les zones de forte et de faible affluence, une étude qui peut également servir à planifier des stratégies de marketing ciblées ou à prendre des décisions concernant l'ouverture de nouveaux cinémas ou la fermeture de ceux sous-performants. 
 
 On peut s'apercevoir ici, que par exemple, dans la zone des vosges, le nombre d'entrées est très faible ce qui s'explique par le fait que cette situation géographique soit située sur la diagonale du vide, ce qui la rend très mal desservie. Les cinémas avec les plus grandes entrées sont dans les métropoles, comme on peut voir pour Paris, Toulon, Marseille etc...
-
+Chaque point nous fournit le nom, le département et les entrées de l'année 2022 du cinéma en question.
 
 
 

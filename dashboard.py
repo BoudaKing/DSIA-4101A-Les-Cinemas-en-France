@@ -65,7 +65,9 @@ def launch_app(name):
             width='100%',
             height='600'
         )
-        
+        html.Div(children=f'''
+            Cette carte illustre la fréquentation des cinémas en France en 2022, mettant en évidence les zones de forte et de faible affluence.'''),
+            
     ])
 
     @app.callback(
