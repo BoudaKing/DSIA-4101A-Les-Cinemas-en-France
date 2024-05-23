@@ -9,6 +9,9 @@ import make_map
 import utils
 
 def launch_app(name):
+    """
+    Fonction qui lance l'application dash qui affiche un histogramme, un scatter plot et une carte de cinéma avec des options interactives 
+    """
     df = tc.treat_csv('./data/etablissements-cinematographiques.csv')
     
     #Generation de l'histogramme
@@ -37,7 +40,7 @@ def launch_app(name):
         ),
 
         html.Div(children=f'''
-            Ceci est un histogramme blablabla'''),
+            Ceci est un histogramme montre une distinction nette entre les parts de marché des films français et américains, les films français dominant souvent grâce à des quotas de distribution nationale, tandis que les films américains maintiennent une présence significative, reflétant les préférences culturelles et les stratégies de programmation des cinémas.'''),
 
         #SCATTERPLOT
         html.H1(children=f'Scatterplot',
@@ -55,7 +58,7 @@ def launch_app(name):
         ),
 
         #CARTE
-        html.H1("Folium Map Integration in Dash",
+        html.H1(" Intégration de la carte ",
             style={'textAlign': 'center', 'color': '#7FDBFF'}),
         html.Iframe(
             srcDoc=open('./maps/map.html', 'r').read(),
