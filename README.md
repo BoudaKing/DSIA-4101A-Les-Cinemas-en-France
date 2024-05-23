@@ -40,7 +40,9 @@ cd ./data
 puis 
 
 ```
-curl -L -O -J https://data.culture.gouv.fr/api/explore/v2.1/catalog/datasets/etablissements-cinematographiques/exports/csv?lang=fr&timezone=Europe%2FBerlin&use_labels=true&delimiter=%3B```
+curl -L -O -J https://data.culture.gouv.fr/api/explore/v2.1/catalog/datasets/etablissements-cinematographiques/exports/csv?lang=fr&timezone=Europe%2FBerlin&use_labels=true&delimiter=%3B
+
+```
 
 
 Ce jeu de données exploité dans mon projet est une compilation exhaustive des informations concernant les établissements cinématographiques en France. Ces données incluent diverses caractéristiques telles que le nom de l'établissement, sa localisation, la programmation, les parts de marchés par catégortie de films...
