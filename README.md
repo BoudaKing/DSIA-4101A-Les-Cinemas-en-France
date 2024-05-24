@@ -68,6 +68,8 @@ On remarque ici que la majorité
 
     Troisième graphique: 
 
+"J'ai d'abord essayé à l'échelle logarithmique mais le résultat n'était pas visible à l'oeil nu."
+
 La repésentation des cinémas en France basée sur les données de fréquentation de 2022 est ici visible sur la carte. On réussi à identifier les zones de forte et de faible affluence, une étude qui peut également servir à planifier des stratégies de marketing ciblées ou à prendre des décisions concernant l'ouverture de nouveaux cinémas ou la fermeture de ceux sous-performants. 
 
 On peut s'apercevoir ici, que par exemple, dans les zones rurales ou moins peuplées comme les vosges, le nombre d'entrées enregistré est très faible un phénomène qui peut être attribué à son positionnement dans ce que l'on appelle la diagonale du vide, ce qui rend le cinéma très mal desservi. Les cinémas avec les plus grandes entrées sont dans les métropoles, comme on peut voir pour Paris, Toulon, Marseille etc...
@@ -80,7 +82,6 @@ Le projet se structure autour de plusieurs fichiers et répertoires à la racine
 Le script en lui-même est divisé en plusieurs segments clés. La première partie s'occupe du chargement des données à partir d'un fichier CSV et de leur nettoyage initial, incluant la suppression des colonnes inutiles et la gestion des valeurs manquantes. Cette étape est cruciale pour assurer la qualité des analyses ultérieures.
 
 La seconde partie du script est dédiée aux fonctions de visualisation. Utilisant des bibliothèques comme folium pour la cartographie, le script permet de créer des visualisations riches et informatives. Ces outils offrent des insights dynamiques sur des variables telles que les parts de marché des films ou la géolocalisation des cinémas, avec des marqueurs colorés indiquant le volume des entrées.
-
 
 
 
